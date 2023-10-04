@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isolate</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 50px;
+    color: #ff0404;
+}
+.container {
+    background-image: linear-gradient(to right, #a74139, #757575); /* Gradient using shades of red from the guitar */
+    border: 5px dashed #000000;
+    padding: 50px;
+    margin: 0 auto;
+    width: 80%;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.btn {
+    background-color: transparent; /* Making button transparent to show gradient */
+    border: none;
+    color: #000000;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>ISOLATE</h1>
+    <p>Separate Music For Free!</p>
+
+    <div class="container">
+        <div class="upload-btn-wrapper">
+            <button class="btn">Choose Or Drag Multiple Audio Files Here!</button>
+            <input type="file" multiple name="audiofiles" accept=".mp3,.wav" />
+        </div>
+    </div>
+</body>
+</html>
